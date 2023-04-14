@@ -20,11 +20,14 @@ func CalculateDiscount(currentPurchase float64, purchaseHistory []float64) (floa
 
 	if media > 1000 {
 		desconto = 20 / 100 * currentPurchase
-		return desconto, nil
+		return fmt.Printf("O valor do desconto é de: %d", desconto), nil
 	} else if len(purchaseHistory) == 0 {
 		desconto = 10 / 100 * currentPurchase
-		return desconto, nil
-	}
+		return fmt.Printf("O valor do desconto é de: %d", desconto), nil
+	} else if soma > 1000 {
+		desconto = 10 / 100 * currentPurchase
+		return fmt.Printf("O valor do desconto é de: %d", desconto), nil
+	} else if soma <
 
 	return 0, nil
 }
